@@ -1,15 +1,15 @@
 :root {
   /* Ralph Lauren-inspired palette */
-  --bg: #f8f4ec;
+  --bg: #f6f1e7;
   --surface: #fffdf8;
-  --text: #0f1d3a;
-  --muted: #4b5872;
-  --brand: #0a1f44;
-  --brand-dark: #071630;
+  --text: #0d1a35;
+  --muted: #536079;
+  --brand: #0a1a3a;
+  --brand-dark: #060f24;
   --accent: #c8a96b;
-  --accent-deep: #a7874f;
-  --line: #e7dcc8;
-  --shadow: 0 12px 35px rgba(10, 31, 68, 0.09);
+  --accent-deep: #9f7b3f;
+  --line: #dfd1b8;
+  --shadow: 0 14px 40px rgba(10, 26, 58, 0.12);
 }
 
 * {
@@ -21,9 +21,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  background: var(--bg);
+  background: radial-gradient(circle at top right, #fbf7ef 0%, var(--bg) 55%);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 img {
@@ -40,7 +40,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247, 248, 252, 0.9);
+  background: rgba(246, 241, 231, 0.9);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
@@ -55,9 +55,10 @@ img {
 .logo {
   text-decoration: none;
   color: var(--text);
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .logo span {
@@ -74,6 +75,7 @@ img {
   text-decoration: none;
   color: var(--muted);
   font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
 .nav-links a:hover {
@@ -102,8 +104,10 @@ img {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.18;
   margin-top: 0;
+  font-weight: 700;
 }
 
 h1 {
@@ -126,14 +130,14 @@ h2 {
 }
 
 .btn {
-  border: 0;
+  border: 1px solid var(--accent);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
-  background: var(--brand);
-  color: white;
+  background: linear-gradient(135deg, var(--brand) 0%, #122a59 100%);
+  color: #fff;
   font-weight: 600;
   border-radius: 999px;
   padding: 0.78rem 1.2rem;
@@ -141,13 +145,13 @@ h2 {
 }
 
 .btn:hover {
-  background: var(--brand-dark);
+  background: linear-gradient(135deg, var(--brand-dark) 0%, #0d224a 100%);
 }
 
 .btn-ghost {
   background: transparent;
-  border: 1px solid var(--line);
-  color: var(--text);
+  border: 1px solid var(--accent);
+  color: var(--brand);
   box-shadow: none;
 }
 
@@ -176,6 +180,7 @@ h2 {
 .hero-metrics strong {
   display: block;
   font-size: 1.1rem;
+  color: var(--brand);
 }
 
 .hero-metrics span {
@@ -221,6 +226,12 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 1rem;
+  box-shadow: 0 6px 20px rgba(10, 26, 58, 0.05);
+}
+
+.card,
+.case-card {
+  border-top: 3px solid #e7d8bd;
 }
 
 .card p,
@@ -267,8 +278,8 @@ h2 {
 
 .tag {
   display: inline-flex;
-  background: #ede0c7;
-  color: var(--brand);
+  background: #efe2ca;
+  color: #7a5a2b;
   border-radius: 999px;
   padding: 0.3rem 0.75rem;
   font-size: 0.82rem;
@@ -306,8 +317,8 @@ h2 {
 
 .site-footer {
   padding: 1.6rem 0;
-  border-top: 1px solid var(--line);
-  background: #efe6d7;
+  border-top: 1px solid #1d2f59;
+  background: #0a1a3a;
 }
 
 .footer-wrap {
@@ -316,7 +327,7 @@ h2 {
   justify-content: space-between;
   gap: 0.75rem;
   flex-wrap: wrap;
-  color: var(--muted);
+  color: #d9c6a1;
   font-size: 0.9rem;
 }
 
