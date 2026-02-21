@@ -1,12 +1,15 @@
 :root {
-  --bg: #f7f8fc;
-  --surface: #ffffff;
-  --text: #181b2c;
-  --muted: #5b6077;
-  --brand: #5b46ff;
-  --brand-dark: #3b2ac8;
-  --line: #e6e9f4;
-  --shadow: 0 12px 35px rgba(36, 42, 90, 0.08);
+  /* Ralph Lauren-inspired palette */
+  --bg: #f8f4ec;
+  --surface: #fffdf8;
+  --text: #0f1d3a;
+  --muted: #4b5872;
+  --brand: #0a1f44;
+  --brand-dark: #071630;
+  --accent: #c8a96b;
+  --accent-deep: #a7874f;
+  --line: #e7dcc8;
+  --shadow: 0 12px 35px rgba(10, 31, 68, 0.09);
 }
 
 * {
@@ -58,7 +61,7 @@ img {
 }
 
 .logo span {
-  color: var(--brand);
+  color: var(--accent-deep);
 }
 
 .nav-links {
@@ -89,7 +92,7 @@ img {
 }
 
 .eyebrow {
-  color: var(--brand);
+  color: var(--accent-deep);
   font-weight: 700;
   font-size: 0.78rem;
   letter-spacing: 0.1em;
@@ -185,7 +188,7 @@ h2 {
 }
 
 .section-alt {
-  background: #f0f3ff;
+  background: #f3ede2;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -246,7 +249,7 @@ h2 {
   place-content: center;
   text-align: center;
   border-style: dashed;
-  background: #fbfcff;
+  background: #faf6ee;
   color: var(--muted);
 }
 
@@ -264,8 +267,8 @@ h2 {
 
 .tag {
   display: inline-flex;
-  background: #ece9ff;
-  color: #4432d6;
+  background: #ede0c7;
+  color: var(--brand);
   border-radius: 999px;
   padding: 0.3rem 0.75rem;
   font-size: 0.82rem;
@@ -294,17 +297,17 @@ h2 {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  border: 1px solid #d9ddf0;
+  border: 1px solid #d8ccb6;
   border-radius: 10px;
   padding: 0.7rem;
   font: inherit;
-  background: #fff;
+  background: #fffdf8;
 }
 
 .site-footer {
   padding: 1.6rem 0;
   border-top: 1px solid var(--line);
-  background: #eef1fc;
+  background: #efe6d7;
 }
 
 .footer-wrap {
